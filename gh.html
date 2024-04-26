@@ -1,0 +1,63 @@
+<!doctype.html>
+<html>
+<head>
+<title>let's do it</title>
+</head>
+<body>
+hi....this is a sample website created by me for my learnings.you can know about me on facebook by visiting
+
+
+<a href=https://www.facebook.com/profile.php?id=100095258707627&mibextid=JRoKGi>my profile</a>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Insertion</title>
+</head>
+
+   <image> <img src="Device storage/Pictures/Screenshots/ Screenshot_2024-04-18-12-50-04-38_998d 3425f9e75a0428f0fabdce419960.jpg" alt="That's me"></image><hr>
+   <marquee behavior="scroll" direction="left">
+welcome to my website</marquee>
+
+<h1><div align="center"><p style="background-color:green;">Let's know about the historical interests of naogaon city</p></marquee></p></div></h1>
+<b>There is a list of the historical interests where you can visit with your family or friends or alone.</b>
+<br><i>(note: you can know more by clicking on the name of the historical place you want to know)</br></i>
+<ul>
+<li>no 1: <a href=https://en.m.wikipedia.org/wiki/Kusumba_Mosque>kusumba</a>
+<li>no 2: <a href=https://en.m.wikipedia.org/wiki/Somapura_Mahavihara>Sompur mohavihara</a>
+<li>no 3: <a href=https://bn.m.wikipedia.org/wiki/%E0%A6%A6%E0%A7%81%E0%A6%AC%E0%A6%B2%E0%A6%B9%E0%A6%BE%E0%A6%9F%E0%A6%BF_%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A6%AC%E0%A6%BE%E0%A6%A1%E0%A6%BC%E0%A7%80>Dubolhati rajbari</a>
+<li>no 4: <a href=https://naogaon.site/patisar-rabindra-kachari-bari-atrai-naogaon/>Patisar Rabinda Kachari Bari</a>
+<li>no 5: <a href=https://en.m.wikipedia.org/wiki/Dibar_Dighi>Dibar dighi</a>
+<li>no 6: <a href=https://bn.m.wikipedia.org/wiki/%E0%A6%86%E0%A6%B2%E0%A6%A4%E0%A6%BE%E0%A6%A6%E0%A7%80%E0%A6%98%E0%A6%BF_%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC_%E0%A6%89%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8>Alta dighi</a>
+<p>These are the main places of interest in Naogaon,Rajshahi,Bangladesh.</p>
+<h2>Comment section</h2>
+    <div id="comments">
+        <!-- Existing comments will be displayed here -->
+    </div>
+    <h3>Remember to leave a nice comment here for my page</h3>
+    <form id="commentForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="comment">Comment:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('commentForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            // Get input values
+            var name = document.getElementById('name').value;
+            var comment = document.getElementById('comment').value;
+            // Create a new comment element
+            var commentElement = document.createElement('div');
+            commentElement.className = 'comment';
+            commentElement.innerHTML = '<strong>' + name + ':</strong> ' + comment;
+            // Append the new comment to the comments section
+            document.getElementById('comments').appendChild(commentElement);
+            // Clear the form fields
+            document.getElementById('name').value = '';
+            document.getElementById('comment').value = '';
+        });
+    </script>
+    </html>
